@@ -2,56 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sovra</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <div class="hero">
     <div class="container">
-      <img src="images/logo.png" alt="Sovra Logo" class="logo"/>
+      <img src="logo.png" alt="Sovra Logo" class="logo" />
       <h1 class="title">Sovra</h1>
       <p class="tagline">Join the future of economy and make real your dream</p>
-      <button onclick="showDescription()" class="btn">Get Started</button>
+      <button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Get Started</button>
     </div>
-  </section>
+  </div>
 
-  <!-- Description Section -->
-  <section id="description" class="description hidden">
+  <!-- About / Sejarah Section -->
+  <div class="description" id="about">
     <div class="container">
-      <h2>About Sovra</h2>
+      <h2>Sejarah dan Visi Sovra</h2>
       <p>
-        Sovra adalah sebuah proyek koin kripto inovatif yang didesain untuk menjadi bahan bakar ekonomi kreatif masa depan, terintegrasi dengan platform <strong>Dream Market</strong> — tempat di mana pengguna bisa menjual ide, cerita, dan mimpi mereka secara bebas dan transparan. Sovra memiliki visi mendemokratisasi nilai kreativitas dan membawa kontrol ekonomi ke tangan pengguna.
+        Sovra adalah proyek kripto inovatif buatan anak bangsa dengan misi merevolusi ekonomi digital dan memberikan peluang ekonomi yang nyata melalui tokenisasi dan platform kreatif. Sovra bukan hanya koin, tapi fondasi dari ekosistem besar bernama Dream Market, di mana kreator, penulis, dan komunitas dapat menciptakan, berbagi, dan mendapatkan penghasilan.
       </p>
       <p>
-        Dengan total supply awal sebanyak 100 miliar dan harga target Rp1 per coin, Sovra didesain dengan sistem anti-whale, anti-rugpull, dan mekanisme burn otomatis. Dukung masa depan ekonomi terdesentralisasi bersama Sovra.
+        Sovra didesain dengan sistem anti-whale, anti-rugpull, serta sistem distribusi dan monetisasi yang sehat dan transparan. Dengan total supply 100 Miliar dan harga awal 1 Rupiah, Sovra menargetkan pertumbuhan nilai berdasarkan kontribusi nyata komunitas dan adopsi platform Dream Market.
       </p>
     </div>
-  </section>
+  </div>
 
-  <!-- Sosial Media Section -->
-  <footer class="footer">
+  <!-- Footer -->
+  <div class="footer">
     <div class="container">
-      <p>Follow us:</p>
+      <p>Ikuti Sovra di Sosial Media:</p>
       <div class="social-links">
-        <a href="https://twitter.com/akunmu" target="_blank">Twitter</a>
-        <a href="https://instagram.com/akunmu" target="_blank">Instagram</a>
-        <a href="https://t.me/akunmu" target="_blank">Telegram</a>
-        <a href="https://youtube.com/@akunmu" target="_blank">YouTube</a>
-        <a href="https://facebook.com/akunmu" target="_blank">Facebook</a>
+        <a href="https://twitter.com/sovra_official" target="_blank">Twitter</a>
+        <a href="https://t.me/sovraofficial" target="_blank">Telegram</a>
+        <a href="https://instagram.com/sovra.official" target="_blank">Instagram</a>
+        <a href="https://youtube.com/@sovra" target="_blank">YouTube</a>
+        <a href="https://github.com/sovra" target="_blank">GitHub</a>
       </div>
     </div>
-  </footer>
-
-  <script>
-    function showDescription() {
-      document.getElementById("description").classList.remove("hidden");
-      window.scrollTo({ top: document.getElementById("description").offsetTop, behavior: "smooth" });
-    }
-  </script>
+  </div>
 
 </body>
 </html>
