@@ -1,50 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sovra</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" type="image/png" />
+    <meta charset="UTF-8">
+    <title>Sovra - Join the Future of Economy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css"> <!-- Optional kalau kamu pakai -->
+    <link rel="stylesheet" href="assets/main.css"> <!-- Atau sesuaikan -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: url('images/pic01.png') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header img {
+            width: 60px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section#sejarah {
+            background: url('images/pic02.png') no-repeat center;
+            background-size: cover;
+            padding: 60px 20px;
+            color: #fff;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: white;
+        }
+
+        .socials a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="container">
-      <img src="logo.png" alt="Sovra Logo" class="logo" />
-      <h1 class="title">Sovra</h1>
-      <p class="tagline">Join the future of economy and make real your dream</p>
-      <button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Get Started</button>
-    </div>
-  </div>
+<header>
+    <img src="images/logo.png" alt="Sovra Logo">
+    <h1>Sovra</h1>
+    <p>Join the future of economy and make real your dream</p>
+    <a href="#sejarah" class="button">Get Started</a>
+</header>
 
-  <!-- About / Sejarah Section -->
-  <div class="description" id="about">
-    <div class="container">
-      <h2>Sejarah dan Visi Sovra</h2>
-      <p>
-        Sovra adalah proyek kripto inovatif buatan anak bangsa dengan misi merevolusi ekonomi digital dan memberikan peluang ekonomi yang nyata melalui tokenisasi dan platform kreatif. Sovra bukan hanya koin, tapi fondasi dari ekosistem besar bernama Dream Market, di mana kreator, penulis, dan komunitas dapat menciptakan, berbagi, dan mendapatkan penghasilan.
-      </p>
-      <p>
-        Sovra didesain dengan sistem anti-whale, anti-rugpull, serta sistem distribusi dan monetisasi yang sehat dan transparan. Dengan total supply 100 Miliar dan harga awal 1 Rupiah, Sovra menargetkan pertumbuhan nilai berdasarkan kontribusi nyata komunitas dan adopsi platform Dream Market.
-      </p>
+<section id="sejarah">
+    <h2>Sejarah & Visi Sovra</h2>
+    <p>
+        Sovra adalah sebuah proyek koin kripto revolusioner yang lahir dari visi untuk memberikan kesempatan ekonomi baru bagi semua orang.
+        Dengan supply awal sebanyak 100 miliar koin dan target harga Rp1 per koin, Sovra mengusung misi inklusivitas, transparansi, dan kemandirian finansial berbasis teknologi blockchain. 
+        Sovra adalah kunci menuju masa depan ekonomi kreatif dan komunitas yang berdaulat.
+    </p>
+    <div style="text-align: center;">
+        <a href="whitepaper.pdf" class="button">Download Whitepaper</a>
     </div>
-  </div>
+</section>
 
-  <!-- Footer -->
-  <div class="footer">
-    <div class="container">
-      <p>Ikuti Sovra di Sosial Media:</p>
-      <div class="social-links">
-        <a href="https://twitter.com/sovra_official" target="_blank">Twitter</a>
-        <a href="https://t.me/sovraofficial" target="_blank">Telegram</a>
-        <a href="https://instagram.com/sovra.official" target="_blank">Instagram</a>
-        <a href="https://youtube.com/@sovra" target="_blank">YouTube</a>
-        <a href="https://github.com/sovra" target="_blank">GitHub</a>
-      </div>
+<footer>
+    <p>© 2025 Sovra Project. All rights reserved.</p>
+    <div class="socials">
+        <a href="https://twitter.com/namasovra" target="_blank">Twitter</a>
+        <a href="https://instagram.com/namasovra" target="_blank">Instagram</a>
+        <a href="https://t.me/namasovra" target="_blank">Telegram</a>
+        <a href="https://youtube.com/@namasovra" target="_blank">YouTube</a>
+        <a href="mailto:contact@sovra.io">Email</a>
     </div>
-  </div>
+</footer>
 
 </body>
 </html>
